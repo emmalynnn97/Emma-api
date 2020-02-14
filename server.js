@@ -7,7 +7,7 @@ require('dotenv/config');
 
 const projectsRoute = require('./routes/projects')
 const pagesRoute = require('./routes/pages')
-
+const menusRoute = require('./routes/menus');
 
 //Set up cross origin resource sharing, enable the body parser
 app.use(cors());
@@ -25,6 +25,7 @@ mongoose.connect(process.env.DB_CONNECTION, {useUnifiedTopology:true,useNewUrlPa
 
 app.use('/pages',pagesRoute);
 app.use('/projects',projectsRoute);
+app.use('/menus',menusRoute);
 //The Root route
 app.get('/', (req, res) => [
     res.status(200).send('API Root')
@@ -35,3 +36,5 @@ app.get('/', (req, res) => [
 app.listen(port, () => {
     console.log(`API is listening on port ${port}`)
 });
+
+
