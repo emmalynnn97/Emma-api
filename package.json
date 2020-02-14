@@ -1,0 +1,24 @@
+{
+  "name": "lynn_api",
+  "version": "1.0.0",
+  "description": "Emma Lynn Guys's API",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Emma Lynn Guy",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.11"
+  }
+}
