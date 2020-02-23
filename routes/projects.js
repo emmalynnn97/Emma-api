@@ -46,7 +46,7 @@ router.patch('/:projectId', async(req,res)=>{
     try{
         const updatedProject = await Project.updateOne(
             {_id:req.params.projectId},
-            {$set: {type: req.body.type}});
+            {$set: {title: req.body.title}});
             res.json(updatedProject);
     }
     catch(err){
