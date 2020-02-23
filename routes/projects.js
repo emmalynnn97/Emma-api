@@ -30,7 +30,8 @@ router.post('/', async (req,res)=>{
         title:req.body.title,
         description:req.body.description,
         link: req.body.link,
-        imageLink: req.body.imageLink
+        imageLink: req.body.imageLink,
+        type:req.body.type
     });
     try {
         const savedProject = await project.save();
