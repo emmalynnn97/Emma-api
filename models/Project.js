@@ -11,6 +11,7 @@ const ProjectSchema = mongoose.Schema({
     },
     link: String,
     imageLink:String,
+    type:String,
     date: {
         type:Date,
         default:Date.now
