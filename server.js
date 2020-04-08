@@ -37,5 +37,5 @@ app.get('/', (req, res) => [
 
 //Start the server, listen on port specified in the port const
 app.listen(port, () => {
-    console.log(`API is listening on port ${port}`)
+    console.log(`Server is listening on port ${port}`)
 });
